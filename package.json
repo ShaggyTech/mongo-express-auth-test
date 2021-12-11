@@ -6,5 +6,5 @@
   "repository": "https://github.com/ShaggyTech/mongo-express-auth-test",
   "author": "Brandon Eichler <github.com/ShaggyTech>",
   "license": "MIT",
-  "private": false
+  "packageManager": "yarn@3.1.1"
 }
