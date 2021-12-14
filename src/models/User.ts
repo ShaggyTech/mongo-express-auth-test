@@ -4,8 +4,8 @@ import {
   PassportLocalSchema,
   PassportLocalModel,
   PassportLocalDocument,
-} from "mongoose";
-import passportLocalMongoose from "passport-local-mongoose";
+} from 'mongoose';
+import passportLocalMongoose from 'passport-local-mongoose';
 
 interface LocalUserSchema extends PassportLocalSchema {
   email: string;
@@ -18,11 +18,11 @@ const UserSchema = new Schema<LocalUserSchema>({
 });
 
 UserSchema.plugin(passportLocalMongoose, {
-  usernameField: "email",
+  usernameField: 'email',
 });
 
 const UserModel: PassportLocalModel<PassportLocalDocument> = model(
-  "User",
+  'User',
   UserSchema as LocalUserSchema
 );
 

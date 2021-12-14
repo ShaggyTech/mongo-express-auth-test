@@ -1,7 +1,7 @@
 // User Model
-import User from "../models/User";
+import User from '../models/User';
 // Types
-import { PassportStatic } from "passport";
+import { PassportStatic } from 'passport';
 
 const setupLocalPassport = (passport: PassportStatic) => {
   // passport-local-mongoose setup LocalStrategy
